@@ -19,7 +19,7 @@ Check your skils and play a game of sudoku!
 
 ## Project
 
-Building a functional and working sudoku.
+Building a functional and working sudoku to practice TypeScript in combination with React!
 
 ---
 
@@ -36,7 +36,7 @@ My planning is the following:
 Done?  
 [ ] - Start the project  
 [ ] - Styled components  
-[ ] - Logic building
+[ ] - Logic building  
 [ ] - Redux  
 [ ] - Finalizing the game  
 [ ] - See where I'm at and check on improving the app
@@ -83,4 +83,4 @@ $ npm run start
 
 ## Thanks
 
-Thanks for having a look at my sudoku repo!
+Thank you for having a look at my sudoku repo!
