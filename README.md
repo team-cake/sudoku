@@ -1,46 +1,86 @@
-# Getting Started with Create React App
+# Sudoku
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Check your skils and play a game of sudoku!
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of contents
 
-### `npm start`
+- [Project](#Project)
+- [Technologies](#Technologies)
+- [Planning](#Planning)
+- [Project Status](#Project-status)
+- [Difficulties](#Difficulties)
+- [Learnings](#Learnings)
+- [Setup](#Setup)
+- [Thanks](#thanks)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project
 
-### `npm test`
+Building a functional and working sudoku.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Sudoku is created with:  
+![](https://img.shields.io/badge/Code-TypeScript-informational?style=plastic&logo=typescript) ![](https://img.shields.io/badge/Tools-Node.js-informational?style=plastic&logo=node-dot-js) ![](https://img.shields.io/badge/Code-React-informational?style=plastic&logo=react)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Planning
 
-### `npm run eject`
+My planning is the following:  
+Done?  
+[ ] - Start the project  
+[ ] - Styled components  
+[ ] - Logic building
+[ ] - Redux  
+[ ] - Finalizing the game  
+[ ] - See where I'm at and check on improving the app
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Status
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Project is: _in progress_  
+At the moment I just started creating the sudoku project!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## Difficulties
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Just started off, will note down any difficulties I encounter.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+## Learnings
+
+Just started off creating this app.
+
+---
+
+## Setup
+
+To run this project, clone this project using:
+
+```
+git clone git@github.com:team-cake/sudoku.git
+```
+
+install it locally using npm:
+
+```
+$ cd ../sudoku
+$ npm install
+$ npm run start
+
+```
+
+---
+
+## Thanks
+
+Thanks for having a look at my sudoku repo!
