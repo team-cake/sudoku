@@ -1,6 +1,6 @@
 # Sudoku
 
-Check your skils and play a game of sudoku!
+Check your skills and play a game of sudoku!
 
 ---
 
@@ -46,7 +46,7 @@ Done?
 ## Project Status
 
 Project is: _in progress_  
-At the moment I just started creating the sudoku project!
+I just started creating the sudoku project! Just a little bit of patience please!
 
 ---
 
