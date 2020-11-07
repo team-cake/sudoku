@@ -34,8 +34,8 @@ Sudoku is created with:
 
 My planning is the following:  
 Done?  
-[ ] - Start the project  
-[ ] - Styled components  
+[x] - Start the project  
+[x] - Styled components  
 [ ] - Logic building  
 [ ] - Redux  
 [ ] - Finalizing the game  
@@ -46,7 +46,7 @@ Done?
 ## Project Status
 
 Project is: _in progress_  
-I just started creating the sudoku project! Just a little bit of patience please!
+Next up: working on the logic. Just a little bit of patience please!
 
 ---
 
