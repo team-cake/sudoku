@@ -16,6 +16,7 @@ export const Row = styled.div`
 				border-top: solid 4px ${theme.colors.black};
 			}
 		}
+
 		&:nth-child(3),
 		&:nth-child(6) {
 			div {
@@ -25,6 +26,17 @@ export const Row = styled.div`
 
 		&:nth-child(9) {
 			border-bottom: solid 4px ${theme.colors.black};
+		}
+
+		div {
+			&:nth-child(1) {
+				border-left: solid 4px ${theme.colors.black};
+			}
+			&:nth-child(3),
+			&:nth-child(6),
+			&:nth-child(9) {
+				border-right: solid 4px ${theme.colors.black};
+			}
 		}
 	`}
 `;
