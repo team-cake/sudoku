@@ -37,6 +37,10 @@ export const Row = styled.div`
 			&:nth-child(9) {
 				border-right: solid 4px ${theme.colors.black};
 			}
+			&:nth-child(4),
+			&:nth-child(7) {
+				border-left: none;
+			}
 		}
 	`}
 `;
