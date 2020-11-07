@@ -1,4 +1,6 @@
-import React, { Children, FC } from 'react';
+import React, { FC, Children } from 'react';
+
+import Block from './block';
 import { Container, Row } from './styles';
 
 const Grid: FC = () => {
@@ -9,7 +11,11 @@ const Grid: FC = () => {
 			{Children.toArray(
 				[...Array(9)].map((_, rowIndex) => (
 					<Row>
-						{Children.toArray([...Array(9)].map((_, colIndex) => <div>0</div>))}
+						{Children.toArray(
+							[...Array(9)].map((_, colIndex) => (
+								<Block colIndex={colIndex} rowIndex={rowIndex} />
+							))
+						)}
 					</Row>
 				))
 			)}
