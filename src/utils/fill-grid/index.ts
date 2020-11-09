@@ -1,4 +1,5 @@
-import { GRID } from '../../typings';
+import { GRID, NUMBERS } from '../../typings';
+import { shuffle } from '../../utils';
 
 const gridExample: GRID = [
 	[0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -11,6 +12,8 @@ const gridExample: GRID = [
 	[0, 0, 0, 0, 0, 0, 0, 0, 0],
 	[0, 0, 0, 0, 0, 0, 0, 0, 0],
 ];
+
+const numbers: NUMBERS[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 /**
  * a backtracking / recursive function to check all the possible combinations of numbers until a solution is found
@@ -26,8 +29,18 @@ function fillGrid(grid: GRID) {
 		col = i % 9;
 
 		if (grid[row][col] === 0) {
-			// Do things
-			// recursive loop
+			shuffle(numbers);
+
+			for (let value of numbers) {
+				// is it not in the grid row?
+				// is it not in the grid column?
+				// is it not in the grid square?
+				// if so
+				grid[row][col] = value;
+				// check grid if it is full, if so, stop and return true
+				// otherwise we run fullGrid(grid) again
+			}
+
 			break;
 		}
 	}
