@@ -4,7 +4,7 @@ import useMousetrap from 'react-hook-mousetrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { AnyAction, Dispatch } from 'redux';
 
-import { createGrid, IReducer } from '../../store';
+import { createGrid, IReducer, selectBlock } from '../../store';
 import { BLOCK_COORDS, INDEX } from '../../typings';
 
 import Block from './block';
@@ -28,19 +28,43 @@ const Grid: FC = () => {
 	}, [create]);
 
 	function moveDown() {
-		if (state.selectedBlock && state.selectedBlock[0] < 8) console.log('down');
+		if (state.selectedBlock && state.selectedBlock[0] < 8)
+			dispatch(
+				selectBlock([
+					(state.selectedBlock[0] + 1) as INDEX,
+					state.selectedBlock[1],
+				])
+			);
 	}
 
 	function moveLeft() {
-		if (state.selectedBlock && state.selectedBlock[1] > 0) console.log('left');
+		if (state.selectedBlock && state.selectedBlock[1] > 0)
+			dispatch(
+				selectBlock([
+					state.selectedBlock[0],
+					(state.selectedBlock[1] - 1) as INDEX,
+				])
+			);
 	}
 
 	function moveRight() {
-		if (state.selectedBlock && state.selectedBlock[1] < 8) console.log('right');
+		if (state.selectedBlock && state.selectedBlock[1] < 8)
+			dispatch(
+				selectBlock([
+					state.selectedBlock[0],
+					(state.selectedBlock[1] + 1) as INDEX,
+				])
+			);
 	}
 
 	function moveUp() {
-		if (state.selectedBlock && state.selectedBlock[0] > 0) console.log('up');
+		if (state.selectedBlock && state.selectedBlock[0] > 0)
+			dispatch(
+				selectBlock([
+					(state.selectedBlock[0] - 1) as INDEX,
+					state.selectedBlock[1],
+				])
+			);
 	}
 
 	useMousetrap('down', moveDown);
