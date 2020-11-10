@@ -16,7 +16,9 @@ interface IState {
 }
 
 const Block: FC<IProps> = ({ colIndex, rowIndex }) => {
-	const state = useSelector<IReducer, IState>(({}) => ({ value: 0 }));
+	const state = useSelector<IReducer, IState>(({ grid }) => ({
+		value: grid ? grid[rowIndex][colIndex] : 0,
+	}));
 
 	return (
 		<Container data-cy={`block-${rowIndex}-${colIndex}`}>
