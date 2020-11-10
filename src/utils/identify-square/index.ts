@@ -11,7 +11,7 @@ interface IInput {
  * @param input Object with 9x9 sudoku grid, row index and column index
  */
 
-function identifyWorkingSquare({ col, grid, row }: IInput): SQUARE {
+function identifySquare({ col, grid, row }: IInput): SQUARE {
 	const square = [];
 	if (row < 3) {
 		if (col < 3)
@@ -57,4 +57,4 @@ function identifyWorkingSquare({ col, grid, row }: IInput): SQUARE {
 	return square as SQUARE;
 }
 
-export default identifyWorkingSquare;
+export default identifySquare;
