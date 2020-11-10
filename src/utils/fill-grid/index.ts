@@ -1,5 +1,12 @@
 import { GRID, NUMBERS } from '../../typings';
-import { shuffle } from '../../utils';
+import {
+	checkGrid,
+	identifySquare,
+	isInCol,
+	isInRow,
+	isInSquare,
+	shuffle,
+} from '../../utils';
 
 const gridExample: GRID = [
 	[0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -33,12 +40,20 @@ function fillGrid(grid: GRID) {
 
 			for (let value of numbers) {
 				// is it not in the grid row?
-				// is it not in the grid column?
-				// is it not in the grid square?
-				// if so
-				grid[row][col] = value;
-				// check grid if it is full, if so, stop and return true
-				// otherwise we run fullGrid(grid) again
+				if (!isInRow({ grid, row, value }))
+					if (!isInCol({ col, grid, value })) {
+						// is it not in the grid column?
+						// is it not in the grid square?
+						// if so...
+						const square = identifySquare({ col, grid, row });
+						if (!isInSquare({ square, value }))
+							// ...
+							grid[row][col] = value;
+						// check grid if it is full, if so, stop and return true
+						if (checkGrid(grid)) return true;
+						else if (fillGrid(grid)) return true;
+						// otherwise we run fullGrid(grid) again
+					}
 			}
 
 			break;
