@@ -9,6 +9,8 @@ import { Container, Row } from './styles';
 
 const Grid: FC = () => {
 	const dispatch = useDispatch<Dispatch<AnyAction>>();
+
+	// UseCallback dispatches the createGrid
 	const create = useCallback(() => dispatch(createGrid()), [dispatch]);
 
 	useEffect(() => {
