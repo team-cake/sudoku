@@ -1,30 +1,34 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
-  ${({ theme }) => css`
-    align-items: center;
-    background-color: ${theme.colors.white};
-    border: solid 1px ${theme.colors.black};
-    cursor: pointer;
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 0;
-    font-size: 20px;
-    font-weight: bold;
-    height: auto;
-    justify-content: center;
-    transition: ${theme.transition};
-    user-select: none;
+interface IProps {
+	active?: boolean;
+}
 
-    &:before {
-      padding-top: 100%;
-      content: '';
-      float: left;
-    }
+export const Container = styled.div<IProps>`
+	${({ active, theme }) => css`
+		align-items: center;
+		background-color: ${active ? theme.colors.blue : theme.colors.white};
+		border: solid 1px ${theme.colors.black};
+		cursor: pointer;
+		display: flex;
+		flex-grow: 1;
+		flex-shrink: 0;
+		flex-basis: 0;
+		font-size: 20px;
+		font-weight: bold;
+		height: auto;
+		justify-content: center;
+		transition: ${theme.transition};
+		user-select: none;
 
-    &:hover {
-      background-color: ${theme.colors.lightBlue};
-    }
-  `}
-`
+		&:before {
+			padding-top: 100%;
+			content: '';
+			float: left;
+		}
+
+		&:hover {
+			background-color: ${theme.colors.lightBlue};
+		}
+	`}
+`;
