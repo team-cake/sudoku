@@ -8,18 +8,6 @@ import {
 	shuffle,
 } from '../../utils';
 
-const gridExample: GRID = [
-	[0, 0, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0, 0, 0, 0],
-];
-
 const numbers: NUMBERS[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 /**
@@ -46,13 +34,14 @@ function fillGrid(grid: GRID) {
 						// is it not in the grid square?
 						// if so...
 						const square = identifySquare({ col, grid, row });
-						if (!isInSquare({ square, value }))
+						if (!isInSquare({ square, value })) {
 							// ...
 							grid[row][col] = value;
-						// check grid if it is full, if so, stop and return true
-						if (checkGrid(grid)) return true;
-						else if (fillGrid(grid)) return true;
-						// otherwise we run fullGrid(grid) again
+							// check grid if it is full, if so, stop and return true
+							if (checkGrid(grid)) return true;
+							else if (fillGrid(grid)) return true;
+							// otherwise we run fullGrid(grid) again
+						}
 					}
 			}
 
