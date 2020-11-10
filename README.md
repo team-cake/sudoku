@@ -36,7 +36,7 @@ My planning is the following:
 Done?  
 [x] - Start the project  
 [x] - Styled components  
-[ ] - Logic building  
+[x] - Logic building  
 [ ] - Redux  
 [ ] - Finalizing the game  
 [ ] - See where I'm at and check on improving the app
@@ -46,13 +46,14 @@ Done?
 ## Project Status
 
 Project is: _in progress_  
-Next up: working on the logic. Just a little bit of patience please!
+Next up: Redux. Just a little bit of patience please!
 
 ---
 
 ## Difficulties
 
-Just started off, will note down any difficulties I encounter.
+Just finished the logic, I've had massive help from Barry Michael Doyle on this.
+The logic part seemed daunting at first. Been learning a lot about the logic.
 
 ---
 
