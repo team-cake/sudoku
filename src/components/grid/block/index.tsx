@@ -18,11 +18,12 @@ interface IState {
 const Block: FC<IProps> = ({ colIndex, rowIndex }) => {
 	const state = useSelector<IReducer, IState>(({ grid }) => ({
 		value: grid ? grid[rowIndex][colIndex] : 0,
+		// value: 0,
 	}));
 
 	return (
 		<Container data-cy={`block-${rowIndex}-${colIndex}`}>
-			{state.value}
+			{state.value === 0 ? '' : state.value}
 		</Container>
 	);
 };
