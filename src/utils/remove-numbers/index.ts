@@ -1,3 +1,4 @@
+import global from '../../global';
 import { GRID } from '../../typings';
 import { copyGrid, getRandomIndex } from '../../utils';
 
@@ -21,6 +22,7 @@ function removeNumbers(grid: GRID, attempts = 5): GRID {
 
 		// copy grid
 		const gridCopy = copyGrid(grid);
+		global.counter = 0;
 
 		// set a global counter
 		// attempt to solve the grid
