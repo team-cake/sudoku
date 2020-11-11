@@ -1,5 +1,5 @@
 import { AnyAction } from 'redux';
-import { createFullGrid } from '../utils';
+import { createFullGrid, removeNumbers } from '../utils';
 
 import { IReducer } from './interfaces';
 import * as types from './types';
@@ -11,7 +11,7 @@ function reducer(state = initialState, action: AnyAction): IReducer {
 		case types.CREATE_GRID:
 			return {
 				...state,
-				grid: createFullGrid(),
+				grid: removeNumbers(createFullGrid()),
 			};
 		case types.SELECT_BLOCK:
 			return {
