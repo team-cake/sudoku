@@ -30,43 +30,40 @@ const Grid: FC = () => {
 	function moveDown() {
 		if (state.selectedBlock && state.selectedBlock[0] < 8)
 			dispatch(
-				selectBlock([
-					(state.selectedBlock[0] + 1) as INDEX,
-					state.selectedBlock[1],
-				])
+				selectBlock([(state.selectedBlock[0] + 1) as INDEX, state.selectedBlock[1]])
 			);
 	}
 
 	function moveLeft() {
 		if (state.selectedBlock && state.selectedBlock[1] > 0)
 			dispatch(
-				selectBlock([
-					state.selectedBlock[0],
-					(state.selectedBlock[1] - 1) as INDEX,
-				])
+				selectBlock([state.selectedBlock[0], (state.selectedBlock[1] - 1) as INDEX])
 			);
 	}
 
 	function moveRight() {
 		if (state.selectedBlock && state.selectedBlock[1] < 8)
 			dispatch(
-				selectBlock([
-					state.selectedBlock[0],
-					(state.selectedBlock[1] + 1) as INDEX,
-				])
+				selectBlock([state.selectedBlock[0], (state.selectedBlock[1] + 1) as INDEX])
 			);
 	}
 
 	function moveUp() {
 		if (state.selectedBlock && state.selectedBlock[0] > 0)
 			dispatch(
-				selectBlock([
-					(state.selectedBlock[0] - 1) as INDEX,
-					state.selectedBlock[1],
-				])
+				selectBlock([(state.selectedBlock[0] - 1) as INDEX, state.selectedBlock[1]])
 			);
 	}
 
+	useMousetrap('1', () => console.log(1));
+	useMousetrap('2', () => console.log(2));
+	useMousetrap('3', () => console.log(3));
+	useMousetrap('4', () => console.log(4));
+	useMousetrap('5', () => console.log(5));
+	useMousetrap('6', () => console.log(6));
+	useMousetrap('7', () => console.log(7));
+	useMousetrap('8', () => console.log(8));
+	useMousetrap('9', () => console.log(9));
 	useMousetrap('down', moveDown);
 	useMousetrap('left', moveLeft);
 	useMousetrap('right', moveRight);
@@ -79,10 +76,7 @@ const Grid: FC = () => {
 					<Row>
 						{Children.toArray(
 							[...Array(9)].map((_, colIndex) => (
-								<Block
-									colIndex={colIndex as INDEX}
-									rowIndex={rowIndex as INDEX}
-								/>
+								<Block colIndex={colIndex as INDEX} rowIndex={rowIndex as INDEX} />
 							))
 						)}
 					</Row>
