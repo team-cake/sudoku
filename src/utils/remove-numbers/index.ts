@@ -1,6 +1,6 @@
 import global from '../../global';
 import { GRID } from '../../typings';
-import { copyGrid, getRandomIndex } from '../../utils';
+import { copyGrid, getRandomIndex, solveGrid } from '../../utils';
 
 /**
  * Removes numbers from a full grid to create a sudoku puzzle
@@ -22,14 +22,19 @@ function removeNumbers(grid: GRID, attempts = 5): GRID {
 
 		// copy grid
 		const gridCopy = copyGrid(grid);
+		// set a global counter
 		global.counter = 0;
 
-		// set a global counter
 		// attempt to solve the grid
+		solveGrid(gridCopy);
 
 		// if global counter is not 1
 		// grid[row][col] = backup
 		// decrement attempts
+		if (global.counter !== 1) {
+			grid[row][col] = backup;
+			attempts--;
+		}
 	}
 	return grid;
 }
