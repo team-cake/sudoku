@@ -26,12 +26,15 @@ function solveGrid(grid: GRID) {
 				if (!isInRow({ grid, row, value }))
 					if (!isInCol({ col, grid, value })) {
 						const square = identifySquare({ col, grid, row });
-						if (!isInSquare({ square, value })) grid[row][col] = value;
-						if (checkGrid(grid)) {
-							global.counter++;
-							break;
-						} else if (solveGrid(grid)) return true;
+						if (!isInSquare({ square, value })) {
+							grid[row][col] = value;
+							if (checkGrid(grid)) {
+								global.counter++;
+								break;
+							} else if (solveGrid(grid)) return true;
+						}
 					}
+			break;
 		}
 	}
 	grid[row][col] = 0;
