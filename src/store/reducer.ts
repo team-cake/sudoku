@@ -1,5 +1,5 @@
 import { AnyAction } from 'redux';
-import { createFullGrid, removeNumbers } from '../utils';
+import { copyGrid, createFullGrid, removeNumbers } from '../utils';
 
 import { IReducer } from './interfaces';
 import * as types from './types';
@@ -8,11 +8,22 @@ const initialState: IReducer = {};
 
 function reducer(state = initialState, action: AnyAction): IReducer {
 	switch (action.type) {
-		case types.CREATE_GRID:
+		case types.CREATE_GRID: {
+			const solvedGrid = createFullGrid();
+			const gridCopy = copyGrid(solvedGrid);
+			const challengeGrid = removeNumbers(
+				gridCopy
+				// , 5
+				// set a number to increase difficulty
+			);
+			const workingGrid = copyGrid(challengeGrid);
 			return {
 				...state,
-				grid: removeNumbers(createFullGrid()),
+				challengeGrid,
+				solvedGrid,
+				workingGrid,
 			};
+		}
 		case types.SELECT_BLOCK:
 			return {
 				...state,
