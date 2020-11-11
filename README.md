@@ -1,6 +1,6 @@
-# Sudoku
+# :memo: Sudoku :memo:
 
-Check your skills and play a game of sudoku!
+Check your skills and play a game of sudoku! :monocle_face:
 
 ---
 
@@ -13,13 +13,13 @@ Check your skills and play a game of sudoku!
 - [Difficulties](#Difficulties)
 - [Learnings](#Learnings)
 - [Setup](#Setup)
-- [Thanks](#thanks)
+- [Credits](#credits)
 
 ---
 
 ## Project
 
-Building a functional and working sudoku to practice TypeScript in combination with React!
+Building a functional and working sudoku to practice TypeScript in combination with React! :muscle:
 
 ---
 
@@ -32,12 +32,11 @@ Sudoku is created with:
 
 ## Planning
 
-My planning is the following:  
-Done?  
-[x] - Start the project  
-[x] - Styled components  
-[x] - Logic building  
-[ ] - Redux  
+:clipboard: My planning is the following:  
+[:heavy_check_mark:] - Start the project  
+[:heavy_check_mark:] - Styled components  
+[:heavy_check_mark:] - Logic building  
+[:heavy_check_mark:] - Redux  
 [ ] - Finalizing the game  
 [ ] - See where I'm at and check on improving the app
 
@@ -45,21 +44,21 @@ Done?
 
 ## Project Status
 
-Project is: _in progress_  
-Next up: Redux. Just a little bit of patience please!
+Project is: _in progress_ :chart_with_upwards_trend:  
+Next up: Time to do some touch ups and add some UX.
 
 ---
 
 ## Difficulties
 
-Just finished the logic, I've had massive help from Barry Michael Doyle on this.
-The logic part seemed daunting at first. Been learning a lot about the logic.
+Just finished the logic and Redux part, I've had massive help from Barry Michael Doyle on this.
+The logic and Redux part seemed daunting at first. Been learning a lot about the logic and implementing Redux. :nerd_face:
 
 ---
 
 ## Learnings
 
-Just started off creating this app.
+Already finalizing the app. Will write down learnings soon! :writing_hand:
 
 ---
 
@@ -76,12 +75,12 @@ install it locally using npm:
 ```
 $ cd ../sudoku
 $ npm install
-$ npm run start
+$ npm start
 
 ```
 
 ---
 
-## Thanks
+## Credits
 
-Thank you for having a look at my sudoku repo!
+Credits to Barry Michael Doyle for creating this amazing course on [Udemy](https://www.udemy.com/course/react2020/)! :raised_hands:
