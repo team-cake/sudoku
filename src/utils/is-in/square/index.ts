@@ -1,4 +1,3 @@
-import { Interface } from 'readline';
 import { NUMBERS, SQUARE } from '../../../typings';
 
 interface IInput {
