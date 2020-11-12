@@ -1,6 +1,7 @@
 # :memo: Sudoku :memo:
 
-Check your skills and play a game of sudoku! :monocle_face:
+Check your skills and play a game of sudoku! :monocle_face:  
+[Click here to play!](https://team-cake.github.io/sudoku/)
 
 ---
 
@@ -45,7 +46,8 @@ Sudoku is created with:
 
 ## Images
 
-![](https://raw.githubusercontent.com/team-cake/sudoku/readme/gif/sudoku.gif)
+![](https://raw.githubusercontent.com/team-cake/sudoku/readme/gif/sudoku.gif)  
+[Click here to play!](https://team-cake.github.io/sudoku/)
 
 ---
 
