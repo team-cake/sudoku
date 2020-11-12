@@ -9,6 +9,7 @@ Check your skills and play a game of sudoku! :monocle_face:
 - [Project](#Project)
 - [Technologies](#Technologies)
 - [Planning](#Planning)
+- [Images](#Images)
 - [Project Status](#Project-status)
 - [Difficulties](#Difficulties)
 - [Learnings](#Learnings)
@@ -39,6 +40,12 @@ Sudoku is created with:
 [:heavy_check_mark:] - Redux  
 [ ] - Finalizing the game  
 [ ] - See where I'm at and check on improving the app
+
+---
+
+## Images
+
+![](https://raw.githubusercontent.com/team-cake/sudoku/readme/gif/sudoku.gif)
 
 ---
 
