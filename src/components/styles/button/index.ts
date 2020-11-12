@@ -16,7 +16,7 @@ export const Button = styled.button`
 		justify-content: center;
 		margin: 4px 2px;
 		min-height: 40px;
-		opacity: 0, 9;
+		opacity: 0.9;
 		transition: ${theme.transition};
 
 		&:focus {
