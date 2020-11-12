@@ -1,9 +1,18 @@
 import React, { FC } from 'react';
-import { NUMBERS } from '../../../typings';
+import { useDispatch, useSelector } from 'react-redux';
+import { AnyAction, Dispatch } from 'redux';
 
 import { Button } from '../../../components';
+import { fillBlock, IReducer } from '../../../store';
+import { BLOCK_COORDS, N, NUMBERS } from '../../../typings';
+
 interface IProps {
 	value: NUMBERS;
+}
+
+interface IState {
+	selectedBlock?: BLOCK_COORDS;
+	selectedValue: N;
 }
 
 const NumberButton: FC<IProps> = ({ value }) => {
