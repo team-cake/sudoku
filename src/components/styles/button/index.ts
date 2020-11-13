@@ -6,7 +6,7 @@ export const Button = styled.button`
 		background-color: ${theme.colors.black};
 		border: 2px solid ${theme.colors.black};
 		border-radius: 4px;
-		colors: ${theme.colors.white};
+		color: ${theme.colors.white};
 		cursor: pointer;
 		display: flex;
 		flex: 1;
