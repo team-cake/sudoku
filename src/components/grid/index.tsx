@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AnyAction, Dispatch } from 'redux';
 
 import { createGrid, fillBlock, IReducer, selectBlock } from '../../store';
-import { BLOCK_COORDS, INDEX, N, NUMBERS } from '../../typings';
+import { BLOCK_COORDS, GRID, INDEX, N, NUMBERS } from '../../typings';
 
 import Block from './block';
 import { Container, Row } from './styles';
@@ -13,16 +13,18 @@ import { Container, Row } from './styles';
 interface IState {
 	selectedBlock?: BLOCK_COORDS;
 	selectedValue: N;
+	solvedGrid?: GRID;
 }
 
 const Grid: FC = () => {
 	const state = useSelector<IReducer, IState>(
-		({ selectedBlock, workingGrid }) => ({
+		({ selectedBlock, solvedGrid, workingGrid }) => ({
 			selectedBlock,
 			selectedValue:
 				workingGrid && selectedBlock
 					? workingGrid[selectedBlock[0]][selectedBlock[1]]
 					: 0,
+			solvedGrid,
 		})
 	);
 	const dispatch = useDispatch<Dispatch<AnyAction>>();
@@ -81,8 +83,8 @@ const Grid: FC = () => {
 	useMousetrap('up', moveUp);
 
 	useEffect(() => {
-		create();
-	}, [create]);
+		if (!state.solvedGrid) create();
+	}, [create, state.solvedGrid]);
 
 	return (
 		<Container>
