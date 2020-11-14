@@ -18,14 +18,16 @@ export const Button = styled.button`
 		min-height: 40px;
 		opacity: 0.9;
 		transition: ${theme.transition};
-
-		&:focus {
-			border-color: ${theme.colors.blue};
-			outline: none;
-		}
+		transition: all 0.2s;
 
 		&:hover {
-			opacity: 0.6;
+			transform: translateY(-2px);
+			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+		}
+
+		&:active {
+			transform: translateY(0px);
+			outline: none;
 		}
 	`}
 `;
