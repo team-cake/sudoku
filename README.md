@@ -12,7 +12,6 @@ Check your skills and play a game of sudoku! :monocle_face:
 - [Planning](#Planning)
 - [Images](#Images)
 - [Project Status](#Project-status)
-- [Difficulties](#Difficulties)
 - [Learnings](#Learnings)
 - [Setup](#Setup)
 - [Credits](#credits)
@@ -39,7 +38,7 @@ Sudoku is created with:
 [:heavy_check_mark:] - Styled components  
 [:heavy_check_mark:] - Logic building  
 [:heavy_check_mark:] - Redux  
-[ ] - Finalizing the game  
+[:heavy_check_mark:] - Finalizing the game  
 [ ] - See where I'm at and check on improving the app
 
 ---
@@ -53,21 +52,14 @@ Sudoku is created with:
 
 ## Project Status
 
-Project is: _in progress_ :chart_with_upwards_trend:  
-Next up: Time to do some touch ups and add some UX.
-
----
-
-## Difficulties
-
-Just finished the logic and Redux part, I've had massive help from Barry Michael Doyle on this.
-The logic and Redux part seemed daunting at first. Been learning a lot about the logic and implementing Redux. :nerd_face:
+Project is: _It works!_ :chart_with_upwards_trend:  
+Next up: Working on some styling upgrades
 
 ---
 
 ## Learnings
 
-Already finalizing the app. Will write down learnings soon! :writing_hand:
+Mostly the logic and Redux part, it seemed daunting at first. Been learning a lot about it. I've had massive help from Barry Michael Doyle on this. :nerd_face:
 
 ---
 
@@ -87,6 +79,8 @@ $ npm install
 $ npm start
 
 ```
+
+[Click here to play!](https://team-cake.github.io/sudoku/)
 
 ---
 
