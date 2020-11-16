@@ -9,6 +9,7 @@ import {
 	Content,
 	Grid,
 	NewGameButton,
+	Name,
 	Numbers,
 	Title,
 } from './components';
@@ -23,12 +24,18 @@ ReactDOM.render(
 		<Provider store={store}>
 			<PersistGate loading={null} persistor={persistor}>
 				<Content>
-					<Title>Sudoku</Title>{' '}
+					<Title>Sudoku</Title>
 					<Card>
 						<NewGameButton />
 						<Grid />
 						<Numbers />
 					</Card>
+					<Name>
+						Made by Alex -{' '}
+						<a href='http://www.github.com/team-cake' target='_blank'>
+							team cake
+						</a>
+					</Name>
 				</Content>
 			</PersistGate>
 		</Provider>
