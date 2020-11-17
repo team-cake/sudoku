@@ -31,7 +31,7 @@ ReactDOM.render(
 						<Numbers />
 					</Card>
 					<Name>
-						Made by Alex -{' '}
+						Alex -{' '}
 						<a href='http://www.github.com/team-cake' target='_blank'>
 							team cake
 						</a>
