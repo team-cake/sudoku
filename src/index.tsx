@@ -32,7 +32,11 @@ ReactDOM.render(
 					</Card>
 					<Name>
 						Alex -{' '}
-						<a href='http://www.github.com/team-cake' target='_blank'>
+						<a
+							href='http://www.github.com/team-cake'
+							target='_blank'
+							rel='noreferrer'
+						>
 							team cake
 						</a>
 					</Name>
