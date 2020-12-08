@@ -4,7 +4,7 @@ import { Action, Dispatch } from 'redux';
 
 import { Button } from '../../components';
 import { createGrid } from '../../store';
-import { Container } from '../numbers/styles';
+import { Container } from './styles/index';
 
 const NewGameButton: FC = () => {
 	const dispatch = useDispatch<Dispatch<Action>>();
