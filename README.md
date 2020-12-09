@@ -14,7 +14,6 @@ Check your skills and play a game of sudoku! :monocle_face:
 - [Project Status](#Project-status)
 - [Learnings](#Learnings)
 - [Setup](#Setup)
-- [Credits](#credits)
 
 ---
 
@@ -39,7 +38,7 @@ Sudoku is created with:
 [:heavy_check_mark:] - Logic building  
 [:heavy_check_mark:] - Redux  
 [:heavy_check_mark:] - Finalizing the game  
-[ ] - See where I'm at and check on improving the app
+[:heavy_check_mark:] - See where I'm at and check on improving the app
 
 ---
 
@@ -81,9 +80,3 @@ $ npm start
 ```
 
 [Click here to play!](https://team-cake.github.io/sudoku/)
-
----
-
-## Credits
-
-Credits to Barry Michael Doyle for creating this amazing course on [Udemy](https://www.udemy.com/course/react2020/)! :raised_hands:
