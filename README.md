@@ -37,8 +37,9 @@ Sudoku is created with:
 [:heavy_check_mark:] - Styled components  
 [:heavy_check_mark:] - Logic building  
 [:heavy_check_mark:] - Redux  
-[:heavy_check_mark:] - Finalizing the game  
+[:heavy_check_mark:] - Finalizing the game (Styling etcetera)  
 [:heavy_check_mark:] - See where I'm at and check on improving the app
+
 
 ---
 
@@ -51,8 +52,7 @@ Sudoku is created with:
 
 ## Project Status
 
-Project is: _It works!_ :chart_with_upwards_trend:  
-Next up: Working on some styling upgrades
+Project is: _It works!_ :heavy_check_mark:
 
 ---
 
