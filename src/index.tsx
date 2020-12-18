@@ -37,7 +37,7 @@ ReactDOM.render(
 							target='_blank'
 							rel='noreferrer'
 						>
-							team cake
+							GitHub
 						</a>
 					</Name>
 				</Content>
