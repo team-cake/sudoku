@@ -13,29 +13,29 @@ export const Row = styled.div`
 
 		&:nth-child(1) {
 			div {
-				border-top: solid 4px ${theme.colors.black};
+				border-top: solid 4px ${theme.colors.kobaltblue};
 			}
 		}
 
 		&:nth-child(3),
 		&:nth-child(6) {
 			div {
-				border-bottom: solid 3px ${theme.colors.black};
+				border-bottom: solid 3px ${theme.colors.kobaltblue};
 			}
 		}
 
 		&:nth-child(9) {
-			border-bottom: solid 4px ${theme.colors.black};
+			border-bottom: solid 4px ${theme.colors.kobaltblue};
 		}
 
 		div {
 			&:nth-child(1) {
-				border-left: solid 4px ${theme.colors.black};
+				border-left: solid 4px ${theme.colors.kobaltblue};
 			}
 			&:nth-child(3),
 			&:nth-child(6),
 			&:nth-child(9) {
-				border-right: solid 4px ${theme.colors.black};
+				border-right: solid 4px ${theme.colors.kobaltblue};
 			}
 			&:nth-child(4),
 			&:nth-child(7) {

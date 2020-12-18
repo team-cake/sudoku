@@ -3,8 +3,8 @@ import styled, { css } from 'styled-components';
 export const Button = styled.button`
 	${({ theme }) => css`
 		align-items: center;
-		background-color: ${theme.colors.black};
-		border: 2px solid ${theme.colors.black};
+		background-color: ${theme.colors.kobaltblue};
+		border: 2px solid ${theme.colors.kobaltblue};
 		border-radius: 4px;
 		color: ${theme.colors.white};
 		cursor: pointer;
